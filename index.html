@@ -873,7 +873,7 @@ let Vitima04Global = [];
               </script>
             
             <label for="ano">Ano:</label>
-            <input type="text" id="ano" value="2025" required style="width: 80px";>
+            <input type="text" id="ano" value="2026" required style="width: 80px";>
         
             <label for="data_registro">Data do Registro:</label>
             <input type="date" id="data_registro" required>
@@ -966,7 +966,8 @@ let Vitima04Global = [];
 "DIEGO CURVO DE MORAES",
 "DANIEL FRANCIS DIONEZIO",
 "JEFFERSON MOREIRA RODRIGUES",
-"RAILAN DE SOUSA SANTOS",
+"FABIO FERNANDES RIBAS",
+"RAILAN DE SOUSA SANTOS ALMEIDA",
 "VINÍCIUS DA SILVA SVERSUTH",
 "RONGÉRIO MARTINS DE SOUSA",
 "FRANCISCO DAS CHAGAS LOPES DA CONCEIÇÃO",
@@ -1038,7 +1039,8 @@ let Vitima04Global = [];
 "DIEGO CURVO DE MORAES",
 "DANIEL FRANCIS DIONEZIO",
 "JEFFERSON MOREIRA RODRIGUES",
-"RAILAN DE SOUSA SANTOS",
+"FABIO FERNANDES RIBAS",
+"RAILAN DE SOUSA SANTOS ALMEIDA",
 "VINÍCIUS DA SILVA SVERSUTH",
 "RONGÉRIO MARTINS DE SOUSA",
 "FRANCISCO DAS CHAGAS LOPES DA CONCEIÇÃO",
@@ -1048,7 +1050,11 @@ let Vitima04Global = [];
 "HALYSON FLÁVIO DA SILVA OLIVEIRA",
 "JÉSSICA BARBOSA PINHEIRO ALMERCÊ",
 "RODINEY ELLISON DOS SANTOS VEIGA",
-"SÍLVIO DE OLIVEIRA CAMPOS"
+"SÍLVIO DE OLIVEIRA CAMPOS",
+"RAFAEL AQUINO SILVA OLIVEIRA",
+"VANESSA DA COSTA OLIVEIRA",
+"RAFAEL PEREIRA DOS ANJOS",
+"LUCAS GABRIEL PEREIRA DE TOLEDO"
 
 
                 ];
@@ -1478,17 +1484,22 @@ let Vitima04Global = [];
 "DIEGO CURVO DE MORAES": { posto: "2º SGT PM", rg: "886277" },
 "DANIEL FRANCIS DIONEZIO": { posto: "2º SGT PM", rg: "887151" },
 "JEFFERSON MOREIRA RODRIGUES": { posto: "2º SGT PM", rg: "887336" },
-"RAILAN DE SOUSA SANTOS": { posto: "CB PM", rg: "885850" },
+"RAILAN DE SOUSA SANTOS ALMEIDA": { posto: "CB PM", rg: "885850" },
 "VINÍCIUS DA SILVA SVERSUTH": { posto: "SD PM", rg: "887696" },
-"RONGÉRIO MARTINS DE SOUSA": { posto: "SD PM", rg: "887636" },
-"FRANCISCO DAS CHAGAS LOPES DA CONCEIÇÃO": { posto: "SD PM", rg: "887273" },
-"GABRIEL PEREIRA REIS": { posto: "SD PM", rg: "887281" },
+"RONGÉRIO MARTINS DE SOUSA": { posto: "CB PM", rg: "887636" },
+"FRANCISCO DAS CHAGAS LOPES DA CONCEIÇÃO": { posto: "CB PM", rg: "887273" },
+"GABRIEL PEREIRA REIS": { posto: "CB PM", rg: "887281" },
 "LEANDRO DOS SANTOS RODRIGUES": { posto: "SD PM", rg: "887833" },
 "DIONATHAN ANTÔNIO DA SILVA PEREIRA": { posto: "SD PM", rg: "888318" },
 "HALYSON FLÁVIO DA SILVA OLIVEIRA": { posto: "SD PM", rg: "888061" },
 "JÉSSICA BARBOSA PINHEIRO ALMERCÊ": { posto: "SD PM", rg: "888395" },
 "RODINEY ELLISON DOS SANTOS VEIGA": { posto: "SD PM", rg: "888310" },
-"SÍLVIO DE OLIVEIRA CAMPOS": { posto: "SD PM", rg: "888283" }
+"SÍLVIO DE OLIVEIRA CAMPOS": { posto: "SD PM", rg: "888283" },
+"FABIO FERNANDES RIBAS": { posto: "CB PM", rg: "885.819" },
+"VANESSA DA COSTA OLIVEIRA": { posto: "SD PM", rg: "888.640" },
+"RAFAEL PEREIRA DOS ANJOS": { posto: "SD PM", rg: "886.671" },
+"LUCAS GABRIEL PEREIRA DE TOLEDO": { posto: "SD PM", rg: "888.671" },
+"RAFAEL AQUINO SILVA OLIVEIRA": { posto: "CB PM", rg: "885.414" },
 
 // AQUI EU COLOCO TODO EFETIVO DO CR 
 
@@ -5046,7 +5057,7 @@ function verificarCheckbox() {
 }
 const comarca3 = document.getElementById("cidade").value
 
-let textTermodeencerramento = `Aos ${diaExtenso} dias do mês de ${mesExtenso} do ano de dois mil e vinte e cinco, por determinação da Autoridade Policial Militar, dou por encerrado a lavratura do presente Termo Circunstanciado de Ocorrência n° - ${numero_tco}/15ºCR/2025, contendo ${pageCount} laudas paginadas e rubricadas, em desfavor do senhor(a) ${nomesConcatenados}, para as providências de remessa dos autos para apreciação do Núcleo de Resoluções de Conflitos e Justiça Restaurativa, da Vara do Juizado Especial da Comarca de ${comarca3}, a quem compete deliberar sobre o suposto delito.`;
+let textTermodeencerramento = `Aos ${diaExtenso} dias do mês de ${mesExtenso} do ano de dois mil e vinte e cinco, por determinação da Autoridade Policial Militar, dou por encerrado a lavratura do presente Termo Circunstanciado de Ocorrência n° - ${numero_tco}/15ºCR/2026, contendo ${pageCount} laudas paginadas e rubricadas, em desfavor do senhor(a) ${nomesConcatenados}, para as providências de remessa dos autos para apreciação do Núcleo de Resoluções de Conflitos e Justiça Restaurativa, da Vara do Juizado Especial da Comarca de ${comarca3}, a quem compete deliberar sobre o suposto delito.`;
 
 
 y += 30
@@ -5057,7 +5068,7 @@ doc.setFont("helvetica", "normal");
 doc.text(textTermodeencerramento, 20, y, { maxWidth: 170, align: 'justify'});
 
 y += 60
-doc.text("Quartel em " + cidade +", "+ dia + " de "+ mesExtenso + " 2025.", 20, y, { maxWidth: 170, align: 'justify'});
+doc.text("Quartel em " + cidade +", "+ dia + " de "+ mesExtenso + " 2026.", 20, y, { maxWidth: 170, align: 'justify'});
 
 y += 70;
 doc.text(`__________________________________________________`, 100, y-4, { align: "center" });
