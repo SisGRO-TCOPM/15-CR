@@ -1058,28 +1058,28 @@ let Vitima04Global = [];
 
 
                 ];
-            } else if (quartelSelecionado === "12ª CIPM BARRA DO BUGRES") {
+            } else if (quartelSelecionado === "13ª CIPM GUARANTÃ DO NORTE") {
                 nomes = [
-                    "ROGÉRIO SÁVIO DA SILVA",
-"ALEXANDRE APARECIDO DE ASSIS ",
-"JOSE AUGUSTO OJEDA",
-"JULIANO MÁRCIO ANDRADE BATISTA",
-"RAIMUNDO CAPISTRANO AMORIM",
-"JEAN CARLOS QUEIROZ PIROVANO",
-"ARNALDO PEREIRA DOS SANTOS ",
-"RONEY GONÇALVES FERREIRA",
-"MALTON SOARES",
-"PAULO EDUADO DO ESPIRITO SANTO",
-"FABIO DE SOUZA DIAS ",
-"JOHNNY EVANGELISTA DE ARRUDA CAMPOS",
-"KEVELLEY ARRUDA OLIVEIRA",
-"RONIL PERON JUNIOR",
-"RODRIGO FRANÇA DE ASSIS",
-"ANDERSON DE SOUZA SCHWARTZ ",
-"HIGSON BRAGA DE SOUZA",
-"JANILSON ALVES CARDOSO",
-"UEWERTON MARCELO LIMA DE OLIVEIRA",
-"ARTHUR GABRIEL DA SILVA SIQUEIRA"
+                    "FERNANDO BORGES DE OLIVEIRA",
+"ELINALDO CHAVES DA SILVA",
+"AMINADABE ROBERTO DE ALMEIDA",
+"WARLEY PEREIRA BARBOSA",
+"APARECIDO PEREIRA PARDIM",
+"CLAUDIO ANTONIO MORAIS",
+"FABIO RAUL MÂNICA",
+"JOHNNY TAYLOR SOUSA E SILVA",
+"RICARDO GONÇALVES DA SILVA",
+"CLEITON GOMES RIBEIRO",
+"PEDRO VALDECI SOUSA FILHO",
+"ATTILA RITHELLE NUNES COSTA",
+"MACKLEBERSON LEANDRO DE SOUSA",
+"ERICA ALVES DE OLIVEIRA",
+"WELKER STREY PEREIRA",
+"DIEGO NOGUEIRA EREGIPE",
+"FRANCISCO REIDIMAR MENDES DA SILVA",
+"JUNIA DOS SANTOS SILVA",
+"JOSE RAFAEL ALVES CAVALCANTI",
+"FERNANDO FERREIRA DA SILVA ALECIO"
 
                 ];
             } else if (quartelSelecionado === "1ª CIPM NOVA OLIMPIA") {
@@ -1321,7 +1321,8 @@ let Vitima04Global = [];
     <select id="quartel" required onchange="alterarNomeCondutor()">
         <option value="" disabled selected>Selecione uma opção</option>
         <option value="CR15 SEDE">SEDE COMANDO REGIONAL 15</option>
-        <option value="22º BPM - PEIXOTO DE AZEVEDO">22º BPM - PEIXOTO DE AZEVEDO</option>        
+        <option value="22º BPM - PEIXOTO DE AZEVEDO">22º BPM - PEIXOTO DE AZEVEDO</option>
+        <option value="13ª CIPM GUARANTÃ DO NORTE">13ª CIPM GUARANTÃ DO NORTE</option>        
         <!--<option value="12ª CIPM BARRA DO BUGRES">12ª CIPM de Barra do Bugres - MT</option>        
         <option value="1ª CIPM NOVA OLIMPIA">1ª CIPM Nova Olimpia</option>
         <option value="NPM DENISE">Nucleo de policia Militar de Denise - MT</option>
@@ -1501,6 +1502,26 @@ let Vitima04Global = [];
 "LUCAS GABRIEL PEREIRA DE TOLEDO": { posto: "SD PM", rg: "888.671" },
 "RAFAEL AQUINO SILVA OLIVEIRA": { posto: "CB PM", rg: "885.414" },
 
+"FERNANDO BORGES DE OLIVEIRA": { posto: "CAP PM", rg: "884242" },
+"ELINALDO CHAVES DA SILVA": { posto: "SUB TEN PM", rg: "880776" },
+"AMINADABE ROBERTO DE ALMEIDA": { posto: "1º SGT PM", rg: "880448" },
+"WARLEY PEREIRA BARBOSA": { posto: "1º SGT PM", rg: "879786" },
+"APARECIDO PEREIRA PARDIM": { posto: "1º SGT PM", rg: "882034" },
+"CLAUDIO ANTONIO MORAIS": { posto: "1º SGT PM", rg: "881996" },
+"FABIO RAUL MÂNICA": { posto: "1º SGT PM", rg: "884240" },
+"JOHNNY TAYLOR SOUSA E SILVA": { posto: "2º SGT PM", rg: "884915" },
+"RICARDO GONÇALVES DA SILVA": { posto: "3º SGT PM", rg: "884262" },
+"CLEITON GOMES RIBEIRO": { posto: "CB PM", rg: "886103" },
+"PEDRO VALDECI SOUSA FILHO": { posto: "CB PM", rg: "887555" },
+"ATTILA RITHELLE NUNES COSTA": { posto: "CB PM", rg: "886414" },
+"MACKLEBERSON LEANDRO DE SOUSA": { posto: "SD PM", rg: "887934" },
+"ERICA ALVS DE OLIVEIRA": { posto: "SD PM", rg: "887938" },
+"WELKER STREY PEREIRA": { posto: "SD PM", rg: "888652" },
+"DIEGO NOGUEIRA EREGIPE": { posto: "SD PM", rg: "888515" },
+"FRANCISCO REIDIMAR MENDES DA SILVA": { posto: "SD PM", rg: "888551" },
+"JUNIA DOS SANTOS SILVA": { posto: "SD PM", rg: "888590" },
+"JOSE RAFAEL ALVES CAVALCANTI": { posto: "SD PM", rg: "888587" },
+"FERNANDO FERREIRA DA SILVA ALECIO": { posto: "SD PM", rg: "888546" },
 // AQUI EU COLOCO TODO EFETIVO DO CR 
 
     };
@@ -3027,11 +3048,11 @@ inputs.forEach(input => {
             doc.text("CONTATO/FONE: (65) 3331-1190 OU (65) 9 98170-0443 | E-mail: 1CIANOVAOLIMPIA@pm.mt.gov.br", 105, 291, { align: "center" });
             quartelnumerotco = "1ªCIAPM"
             }
-            if (quartel === "12ª CIPM BARRA DO BUGRES") {
-            doc.text("12ª COMPANHIA INDEPENDENTE DE POLICIA MILITAR", 105, 285, { align: "center" });
-            doc.text("END.: RUA FREDERICO JOSETE 502 - BAIRRO BEIRA RIO - BARRA DO BUGRES-MT", 105, 288, { align: "center" });
-            doc.text("TELEFONE:(65) 3361 1190 | (65) 98170-0439", 105, 291, { align: "center" });
-            quartelnumerotco = "12ªCIPM"
+            if (quartel === "13ª CIPM GUARANTÃ DO NORTE") {
+            doc.text("13ª COMPANHIA INDEPENDENTE DE POLICIA MILITAR", 105, 285, { align: "center" });
+            doc.text("END.: RUA INHARÉ Nº1.095 - BAIRRO CENTRO - GUARABTÃ DO NORTE-MT - CEP 78.520-000", 105, 288, { align: "center" });
+            doc.text("TELEFONE:(65) 3552 1190 | ", 105, 291, { align: "center" });
+            quartelnumerotco = "13ªCIPM"
             }
             if (quartel === "NPM PORTO ESTRELA") {
             doc.text("NUCLEO DE POLICIA MILITAR DE PORTO ESTRELA", 105, 285, { align: "center" });
@@ -4282,12 +4303,12 @@ let tElefonecomarca
                 //resultado.innerHTML = "Ação para Barra do Bugres, Nova Olímpia, Porto Estrela ou Denise";
                 cOmarca = "Peixoto de Azevedo";
                 eNdereçocomarca = "Rua Pedro Alvares Cabral, 38 - Centro";
-                tElefonecomarca ="Telefone (65) 3575-2028";
-            } else if (cidade === "Tangara da serra-MT") {
+                tElefonecomarca ="Telefone (66) 3575-2028";
+            } else if (cidade === "Guarantã do Norte-MT") {
                 //resultado.innerHTML = "Ação para Tangará";
-                cOmarca = "Tangara da serra-MT";
-                eNdereçocomarca = "Av. Presidente Tancredo de Almeida Neves, Nº 1220-N - Centro";
-                tElefonecomarca ="telefone (65) 99203-2265";
+                cOmarca = "Guarantã do Norte-MT";
+                eNdereçocomarca = "Av. Guarantã, Nº 1225-N - Cidade Nova, CEP 78520-000";
+                tElefonecomarca ="telefone (66) 3552-2040";
             } else if (cidade === "Campo Novo dos Parecis-MT" || cidade === "Brasnorte-MT" || cidade === "Sapezal-MT") {
                 //resultado.innerHTML = "Ação para Camp Novo, Branortes ou Sapezal";
                 cOmarca = "Campo Novo dos Parecis-MT";
@@ -4434,11 +4455,11 @@ let tElefonecomarcaV
                 cOmarcaV = "Peixoto de Azevedo";
                 eNdereçocomarcaV = "Rua Pedro Alvares Cabral, 38 - Centro";
                 tElefonecomarcaV ="Telefone (65) 3575-2028";
-            } else if (cidade === "Tangara da serra-MT") {
+            } else if (cidade === "Guarantã do Norte-MT") {
                 //resultado.innerHTML = "Ação para Tangará";
-                cOmarcaV = "Tangara da serra-MT";
-                eNdereçocomarcaV = "Av. Presidente Tancredo de Almeida Neves, Nº 1220-N - Centro";
-                tElefonecomarcaV ="telefone (65) 99203-2265";
+                cOmarcaV = "Guarantã do Norte-MT";
+                eNdereçocomarcaV = "Av. Guarantã, Nº 1225-N - Cidade Nova";
+                tElefonecomarcaV ="telefone (66) 3552-2040";
             } else if (cidade === "Campo Novo dos Parecis-MT" || cidade === "Brasnorte-MT" || cidade === "Sapezal-MT") {
                 //resultado.innerHTML = "Ação para Camp Novo, Branortes ou Sapezal";
                 cOmarcaV = "Campo Novo dos Parecis-MT";
